@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    border: none;
+    padding: 10px 15px;
+    transition:  all .3s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition:  all .3s ease-in-out;
+    
+}
+html , body{
+    font-family: "Roboto",  sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style:  none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    max-height: 70px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(red, green, blue, alpha);
+    background-color: var(--purple300);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+.hero-section{
+    margin-top: -100px;
+    background-image: url(images/hero_image.png);
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.hero-section h1{
+    font-size: 96px;
+}
+.hero-section h3{
+    font-size: 32px;
+}
+.music-section{
+    padding: 0;
+    background-color: var(--purple500);
+    padding-top: 75px;
+    
+}
+.music-section .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+.ipad-iphone-img{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+.primary-btn{
+    background-color: var(--red600);
+    color:white;
+}
+.secondary-btn{
+    background-color: var(--purple500);
+    color: white;
+}
+.about-music .container{
+    text-align: center;
+    padding-top:500px ;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}  
+/* .videos .video-section {
+    height: 100vh;
+    position: relative;
+  } */
+video{
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    z-index: 1;
+}
+.video-section{
+    background: url(assests/video.mp4);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color:  white;
+    gap: 30px;
+    
+}
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    gap: 30px;
+    margin-top: -150px;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    z-index: 3;
+}
+.hero-section, .video-section{
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.gift-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px  auto;
+    gap: 50px;
+}
+.gift-section .container{
+
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 75px;
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@media only screen and (max-width: 768px) {
+    /* Responsive styles for mobile devices */
+  
+    .container {
+      max-width: 90%;
+    }
+  
+    .hero-section {
+      margin-top: -70px;
+    }
+  
+    .hero-section h1 {
+      font-size: 48px;
+    }
+  
+    .hero-section h3 {
+      font-size: 24px;
+    }
+  
+    .ipad-iphone-img {
+      margin-top: -300px;
+      top: 300px;
+    }
+  
+    .about-music .container {
+      padding-top: 300px;
+      margin-bottom: 30px;
+    }
+  
+    .video-section .container {
+      max-width: 90%;
+      margin-top: -100px;
+    }
+  } 
+.footer-upper{
+    background-color: #281154;
+    padding:  20px 0;
+}
+.footer-upper .container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footer-upper h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom:  20px;
+}
+.footer-lower{
+    background-color: var(--purple300);
+    padding:  10px 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
