@@ -10,8 +10,7 @@ This is a simple music app created using HTML and CSS only. It provides a basic 
 
 ## Demo
 
-You can view a live demo of the project [here]([https://example.co](https://yogendrabhammarkar57.github.io/Music-App/)).
-
+You can view a live demo of the project [here](https://yogendrabhammarkar57.github.io/Music-App/).
 ## Screenshots
 
 ![Screenshot 1](project6.png)
